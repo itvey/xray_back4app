@@ -23,6 +23,8 @@ wget https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/ge
 cat config.json | base64 > config
 rm -f config.json
 
+apt-get install systemd-journal
+
 # If there are three variables set for the Nezha probe, it will be installed. If not filled or incomplete, it will not be installed
 [ -n "${NEZHA_SERVER}" ] && [ -n "${NEZHA_PORT}" ] && [ -n "${NEZHA_KEY}" ] && wget https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -O nezha.sh && chmod +x nezha.sh && ./nezha.sh install_agent ${NEZHA_SERVER} ${NEZHA_PORT} ${NEZHA_KEY}
 
