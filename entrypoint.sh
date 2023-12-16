@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define UUID and masquerade path, please modify it yourself. (Note: The masquerading path starts with / symbol, in order to avoid unnecessary trouble, please do not use special symbols.)
-UUID=${UUID:-'8804add9-5c68-8bab-950c-08cd5320df18'}
+UUID=${UUID:-'5204add9-5c68-8bab-950c-08cd5320df18'}
 VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
 VLESS_WSPATH=${VLESS_WSPATH:-'/vl'}
 TROJAN_WSPATH=${TROJAN_WSPATH:-'/trojan'}
