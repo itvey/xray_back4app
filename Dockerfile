@@ -16,7 +16,7 @@ COPY entrypoint.sh /entrypoint.sh
 COPY nezha.sh /app/nezha/
 
 # 赋予 entrypoint.sh 执行权限
-RUN chmod +x /entrypoint.sh && chmod +x /app/nezha/nezha.sh && apt-get update && apt-get install -y wget unzip qrencode iproute2 systemctl
+RUN chmod +x /entrypoint.sh && chmod +x /app/nezha/nezha.sh && apt-get update && apt-get install -y wget unzip qrencode iproute2 systemctl apt-utils
 
 
 # 暴露容器的 80 端口
